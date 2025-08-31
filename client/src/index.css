@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: hsl(210, 40%, 98%);
+  --foreground: hsl(222, 84%, 5%);
+  --card: hsl(0, 0%, 100%);
+  --card-foreground: hsl(222, 84%, 5%);
+  --popover: hsl(0, 0%, 100%);
+  --popover-foreground: hsl(222, 84%, 5%);
+  --primary: hsl(207, 90%, 54%);
+  --primary-foreground: hsl(210, 40%, 98%);
+  --secondary: hsl(210, 40%, 96%);
+  --secondary-foreground: hsl(222, 47%, 11%);
+  --muted: hsl(210, 40%, 96%);
+  --muted-foreground: hsl(215, 16%, 47%);
+  --accent: hsl(15, 100%, 60%);
+  --accent-foreground: hsl(210, 40%, 98%);
+  --destructive: hsl(0, 84%, 60%);
+  --destructive-foreground: hsl(210, 40%, 98%);
+  --border: hsl(214, 32%, 91%);
+  --input: hsl(214, 32%, 91%);
+  --ring: hsl(207, 90%, 54%);
+  --chart-1: hsl(207, 90%, 54%);
+  --chart-2: hsl(159, 100%, 36%);
+  --chart-3: hsl(42, 93%, 56%);
+  --chart-4: hsl(147, 79%, 42%);
+  --chart-5: hsl(341, 75%, 51%);
+  --radius: 0.75rem;
+}
+
+.dark {
+  --background: hsl(222, 84%, 5%);
+  --foreground: hsl(210, 40%, 98%);
+  --card: hsl(222, 84%, 5%);
+  --card-foreground: hsl(210, 40%, 98%);
+  --popover: hsl(222, 84%, 5%);
+  --popover-foreground: hsl(210, 40%, 98%);
+  --primary: hsl(207, 90%, 54%);
+  --primary-foreground: hsl(222, 84%, 5%);
+  --secondary: hsl(217, 32%, 17%);
+  --secondary-foreground: hsl(210, 40%, 98%);
+  --muted: hsl(217, 32%, 17%);
+  --muted-foreground: hsl(215, 20%, 65%);
+  --accent: hsl(15, 100%, 60%);
+  --accent-foreground: hsl(210, 40%, 98%);
+  --destructive: hsl(0, 63%, 31%);
+  --destructive-foreground: hsl(210, 40%, 98%);
+  --border: hsl(217, 32%, 17%);
+  --input: hsl(217, 32%, 17%);
+  --ring: hsl(207, 90%, 54%);
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground antialiased;
+    font-family: 'Inter', sans-serif;
+  }
+}
+
+@layer components {
+  .hero-gradient {
+    background: linear-gradient(135deg, hsl(210, 40%, 98%) 0%, hsl(207, 90%, 95%) 100%);
+  }
+
+  .video-carousel {
+    position: relative;
+    overflow: hidden;
+    border-radius: var(--radius);
+  }
+
+  .video-slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+  }
+
+  .video-slide.active {
+    opacity: 1;
+  }
+
+  .video-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(45deg, hsla(207, 90%, 54%, 0.1) 0%, hsla(15, 100%, 60%, 0.1) 100%);
+    z-index: 1;
+  }
+}
