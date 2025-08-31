@@ -1,0 +1,97 @@
+Create a modern, professional, and responsive website for an EduTech training company called CliniGlobal Research Institute, which specializes in Clinical Research training programs.
+
+The website should look clean, corporate, and trustworthy, with a focus on healthcare + education theme. Use a blue and white color palette with soft gradients. Include clear CTAs (buttons like “Apply Now”, “Download Brochure”, “Contact Us”) and professional typography.
+
+Website Sections:
+
+Header / Navbar:
+
+Logo (CliniGlobal Research Institute)
+
+Menu: Home, About Us, Programs, Admission, Contact
+
+CTA button: Apply Now (highlighted in blue/green)
+
+Hero Section (Landing Banner):
+
+Headline: “Learn, Advance, and Build Your Career in Clinical Research”
+
+Subtext: Industry-focused training programs designed to help you succeed in the global clinical research field.
+
+Buttons: Apply Now (primary), Download Brochure (secondary)
+
+Background: clean gradient or healthcare-themed subtle illustration
+
+About Section:
+
+A brief intro about CliniGlobal, highlighting expertise, experienced faculty, and career-focused approach.
+
+A photo of a professional (doctor/researcher) with short credentials.
+
+Why Choose CliniGlobal (Highlights):
+
+Key points with icons (use a 4-column grid):
+
+Expert Faculty
+
+100% Placement Assistance
+
+Flexible Learning (Online + Offline)
+
+Recognized Certifications
+
+Programs Section (Cards Layout):
+
+Example Programs:
+
+PG Diploma in Clinical Research
+
+Clinical Data Management
+
+Pharmacovigilance
+
+Medical Writing
+
+Each program card should have image, title, duration, and CTA (View Details).
+
+Admission Process (Step-by-Step Timeline):
+
+Step 1: Submit Application
+
+Step 2: Attend Counseling Session
+
+Step 3: Confirm Enrollment
+
+Step 4: Start Training
+
+Testimonials (Optional but professional):
+
+Student success stories with photos and quotes.
+
+Contact Section:
+
+Inquiry form (Name, Email, Phone, Message)
+
+CTA: Request a Callback
+
+Contact details: phone, email, location
+
+Footer:
+
+Quick Links: Home | About | Programs | Contact
+
+Social Media icons
+
+Copyright © 2025 CliniGlobal Research Institute
+
+Design Guidelines:
+
+Modern, minimal, and professional layout.
+
+Soft gradients of blue (#0A66C2) and white.
+
+Rounded cards with subtle shadows.
+
+Clean typography: Inter or Poppins.
+
+Use healthcare/education stock images where needed.
