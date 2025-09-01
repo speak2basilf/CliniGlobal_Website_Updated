@@ -88,13 +88,6 @@ export default function AccreditationsSection() {
           </div>
         </div>
 
-        {/* Floating Query Button - Positioned in bottom right */}
-        <div className="fixed bottom-6 right-6 z-40">
-          <button className="bg-red-500 hover:bg-red-600 text-white px-4 py-3 rounded-lg text-sm font-medium shadow-lg hover:shadow-xl transition-all duration-200 flex items-center space-x-2 animate-pulse hover:animate-none">
-            <span>💬</span>
-            <span>Drop us a Query</span>
-          </button>
-        </div>
       </div>
     </section>
   );

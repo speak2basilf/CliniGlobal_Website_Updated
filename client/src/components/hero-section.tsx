@@ -10,7 +10,7 @@ export default function HeroSection() {
   };
 
   return (
-    <section id="home" className="bg-gradient-to-br from-gray-50 to-blue-50 py-16 lg:py-24 relative overflow-hidden">
+    <section id="home" className="bg-gradient-to-br from-gray-100 to-blue-50 py-16 lg:py-24 relative overflow-hidden">
       {/* Background Decorations */}
       <div className="absolute top-20 right-20 w-12 h-12 bg-pink-200 rounded-full opacity-60"></div>
       <div className="absolute top-40 right-32 w-8 h-8 bg-blue-200 rounded-full opacity-60"></div>
@@ -25,12 +25,12 @@ export default function HeroSection() {
               <div className="inline-flex items-center px-4 py-2 rounded-full bg-orange-500 text-white font-medium text-sm">
                 ⚡ #1 Healthcare Training Institute
               </div>
-              <h1 className="text-4xl lg:text-5xl font-bold text-gray-900 leading-tight" data-testid="text-hero-title">
-                Learn, Advance,
+              <h1 className="text-4xl lg:text-6xl font-bold leading-tight" data-testid="text-hero-title">
+                <span className="text-gray-900">Learn, Advance,</span>
                 <br />
                 <span className="text-blue-600">Accelerate Your Career</span>
                 <br />
-                <span className="text-black">With </span>
+                <span className="text-gray-900">With </span>
                 <span className="text-teal-500">Clini</span><span className="text-orange-500">Global</span>
               </h1>
               <p className="text-lg text-gray-600 leading-relaxed max-w-xl" data-testid="text-hero-description">
@@ -73,7 +73,7 @@ export default function HeroSection() {
               {/* Main Image */}
               <div className="relative mb-4">
                 <img 
-                  src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=400" 
+                  src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=400" 
                   alt="Professional healthcare worker" 
                   className="w-full h-64 object-cover rounded-lg"
                 />
@@ -110,3 +110,11 @@ export default function HeroSection() {
     </section>
   );
 }
+
+      {/* Floating Query Button - Positioned in bottom right */}
+      <div className="fixed bottom-6 right-6 z-40">
+        <button className="bg-red-500 hover:bg-red-600 text-white px-4 py-3 rounded-lg text-sm font-medium shadow-lg hover:shadow-xl transition-all duration-200 flex items-center space-x-2">
+          <span>📞</span>
+          <span>Drop us a Query</span>
+        </button>
+      </div>

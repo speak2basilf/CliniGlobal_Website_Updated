@@ -16,13 +16,13 @@ export default function Header() {
   return (
     <header className="sticky top-0 z-50 shadow-lg">
       {/* Top Blue Bar */}
-      <div className="bg-blue-600 text-white py-2">
+      <div className="bg-blue-500 text-white py-2">
         <div className="container mx-auto px-4 lg:px-8">
           <div className="flex items-center justify-between text-sm">
             <div className="flex items-center space-x-6">
               <div className="flex items-center space-x-2">
                 <Phone className="w-4 h-4" />
-                <span>+91 9037944447</span>
+                <span>+91 7093794447</span>
               </div>
               <div className="flex items-center space-x-2">
                 <Mail className="w-4 h-4" />
@@ -60,11 +60,11 @@ export default function Header() {
             <nav className="hidden lg:flex items-center space-x-8">
               <button 
                 onClick={() => scrollToSection("home")}
-                className="text-gray-800 hover:text-blue-600 transition-colors duration-200 font-medium relative group"
+                className="text-blue-600 hover:text-blue-700 transition-colors duration-200 font-medium relative group"
                 data-testid="nav-home"
               >
                 Home
-                <div className="absolute bottom-0 left-0 w-0 h-0.5 bg-blue-600 group-hover:w-full transition-all duration-200"></div>
+                <div className="absolute -bottom-1 left-1/2 transform -translate-x-1/2 w-2 h-2 bg-blue-600 rounded-full"></div>
               </button>
               <button 
                 onClick={() => scrollToSection("about")}
@@ -72,7 +72,6 @@ export default function Header() {
                 data-testid="nav-about"
               >
                 About
-                <div className="absolute bottom-0 left-0 w-0 h-0.5 bg-blue-600 group-hover:w-full transition-all duration-200"></div>
               </button>
               <div className="relative group">
                 <button 
@@ -82,7 +81,6 @@ export default function Header() {
                 >
                   <span>Courses</span>
                   <ChevronDown className="w-4 h-4" />
-                  <div className="absolute bottom-0 left-0 w-0 h-0.5 bg-blue-600 group-hover:w-full transition-all duration-200"></div>
                 </button>
               </div>
               <button 
@@ -91,22 +89,19 @@ export default function Header() {
                 data-testid="nav-placements"
               >
                 Placements
-                <div className="absolute bottom-0 left-0 w-0 h-0.5 bg-blue-600 group-hover:w-full transition-all duration-200"></div>
               </button>
-              <button 
-                className="text-gray-600 hover:text-blue-600 transition-colors duration-200 font-medium relative group"
+              <Button
+                className="bg-blue-500 hover:bg-blue-600 text-white px-6 py-2 rounded-full font-medium transition-colors duration-200 shadow-sm text-sm"
                 data-testid="nav-blogs"
               >
                 Blogs
-                <div className="absolute bottom-0 left-0 w-0 h-0.5 bg-blue-600 group-hover:w-full transition-all duration-200"></div>
-              </button>
+              </Button>
               <button 
                 onClick={() => scrollToSection("contact")}
                 className="text-gray-600 hover:text-blue-600 transition-colors duration-200 font-medium relative group"
                 data-testid="nav-contact"
               >
                 Contact
-                <div className="absolute bottom-0 left-0 w-0 h-0.5 bg-blue-600 group-hover:w-full transition-all duration-200"></div>
               </button>
             </nav>
 

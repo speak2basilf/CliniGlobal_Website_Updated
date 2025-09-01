@@ -146,7 +146,7 @@ export default function ContactSection() {
                   </div>
                   <div>
                     <h4 className="font-semibold text-foreground">Phone</h4>
-                    <p className="text-muted-foreground">+91 9037944447</p>
+                    <p className="text-muted-foreground">+91 7093794447</p>
                     <p className="text-sm text-muted-foreground">Mon-Fri 9AM-6PM IST</p>
                   </div>
                 </div>
