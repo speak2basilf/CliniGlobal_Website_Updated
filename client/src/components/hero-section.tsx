@@ -1,6 +1,5 @@
-import { Award } from "lucide-react";
+import { Heart, MessageCircle, Bookmark, MoreHorizontal } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import VideoCarousel from "./video-carousel";
 
 export default function HeroSection() {
   const scrollToSection = (sectionId: string) => {
@@ -11,63 +10,105 @@ export default function HeroSection() {
   };
 
   return (
-    <section id="home" className="hero-gradient py-16 lg:py-24">
-      <div className="container mx-auto px-4 lg:px-8">
-        <div className="grid lg:grid-cols-5 gap-12 items-center">
-          {/* Left Content (60%) */}
-          <div className="lg:col-span-3 space-y-8">
+    <section id="home" className="bg-gradient-to-br from-gray-50 to-blue-50 py-16 lg:py-24 relative overflow-hidden">
+      {/* Background Decorations */}
+      <div className="absolute top-20 right-20 w-12 h-12 bg-pink-200 rounded-full opacity-60"></div>
+      <div className="absolute top-40 right-32 w-8 h-8 bg-blue-200 rounded-full opacity-60"></div>
+      <div className="absolute bottom-20 left-20 w-10 h-10 bg-yellow-200 rounded-full opacity-60"></div>
+      <div className="absolute top-32 left-32 w-6 h-6 bg-purple-200 rounded-full opacity-60"></div>
+
+      <div className="container mx-auto px-4 lg:px-8 relative">
+        <div className="grid lg:grid-cols-2 gap-12 items-center">
+          {/* Left Content */}
+          <div className="space-y-8">
             <div className="space-y-6">
-              <div className="inline-flex items-center px-4 py-2 rounded-full bg-accent/10 text-accent font-medium text-sm">
-                <Award className="w-4 h-4 mr-2" />
-                #1 Healthcare Training Institute
+              <div className="inline-flex items-center px-4 py-2 rounded-full bg-orange-500 text-white font-medium text-sm">
+                ⚡ #1 Healthcare Training Institute
               </div>
-              <h1 className="text-4xl lg:text-6xl font-bold text-foreground leading-tight" data-testid="text-hero-title">
-                Learn, Advance, and 
-                <span className="text-primary"> Build Your Career</span> 
-                in Clinical Research
+              <h1 className="text-4xl lg:text-5xl font-bold text-gray-900 leading-tight" data-testid="text-hero-title">
+                Learn, Advance,
+                <br />
+                <span className="text-blue-600">Accelerate Your Career</span>
+                <br />
+                <span className="text-black">With </span>
+                <span className="text-teal-500">Clini</span><span className="text-orange-500">Global</span>
               </h1>
-              <p className="text-lg text-muted-foreground leading-relaxed max-w-2xl" data-testid="text-hero-description">
-                Industry-focused training programs designed to help you succeed in the global clinical research field. Join thousands of professionals who have transformed their careers with our expert-led programs.
+              <p className="text-lg text-gray-600 leading-relaxed max-w-xl" data-testid="text-hero-description">
+                Step into the Future of Healthcare with New-Age Programs like Clinical Research, Medical Coding, Clinical SAS, Bioinformatics, AI & ML in Healthcare, MBA in Healthcare, and more – designed to equip you for tomorrow's medical and healthcare landscape.
               </p>
             </div>
             
             <div className="flex flex-col sm:flex-row gap-4">
               <Button 
-                onClick={() => scrollToSection("contact")}
-                className="bg-primary hover:bg-primary/90 text-primary-foreground px-8 py-4 rounded-lg font-semibold text-lg transition-all duration-200 shadow-lg hover:shadow-xl"
-                data-testid="button-apply-now-hero"
+                onClick={() => scrollToSection("programs")}
+                className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 rounded-lg font-semibold text-lg transition-all duration-200 shadow-lg hover:shadow-xl"
+                data-testid="button-explore-courses"
               >
-                Apply Now
+                Explore Courses →
               </Button>
               <Button 
-                variant="outline"
-                className="border border-border hover:bg-secondary text-foreground px-8 py-4 rounded-lg font-medium text-lg transition-all duration-200"
-                data-testid="button-download-brochure"
+                onClick={() => scrollToSection("contact")}
+                className="bg-green-600 hover:bg-green-700 text-white px-8 py-4 rounded-lg font-semibold text-lg transition-all duration-200 shadow-lg hover:shadow-xl"
+                data-testid="button-enroll-now-hero"
               >
-                Download Brochure
+                Enroll Now →
               </Button>
-            </div>
-
-            {/* Stats */}
-            <div className="flex flex-wrap gap-8 pt-8">
-              <div className="text-center" data-testid="stat-students-placed">
-                <div className="text-3xl font-bold text-primary">500+</div>
-                <div className="text-sm text-muted-foreground">Students Placed</div>
-              </div>
-              <div className="text-center" data-testid="stat-years-experience">
-                <div className="text-3xl font-bold text-primary">15+</div>
-                <div className="text-sm text-muted-foreground">Years Experience</div>
-              </div>
-              <div className="text-center" data-testid="stat-placement-support">
-                <div className="text-3xl font-bold text-primary">100%</div>
-                <div className="text-sm text-muted-foreground">Placement Support</div>
-              </div>
             </div>
           </div>
 
-          {/* Right Video Carousel (40%) */}
-          <div className="lg:col-span-2">
-            <VideoCarousel />
+          {/* Right Social Media Mockup */}
+          <div className="relative">
+            <div className="bg-white rounded-2xl shadow-2xl p-4 max-w-sm mx-auto">
+              {/* Header */}
+              <div className="flex items-center justify-between mb-4">
+                <div className="flex items-center space-x-2">
+                  <div className="text-lg font-bold">
+                    <span className="text-teal-500">Clini</span><span className="text-orange-500">Global</span>
+                  </div>
+                </div>
+                <MoreHorizontal className="w-5 h-5 text-gray-400" />
+              </div>
+              <div className="text-sm text-gray-600 mb-4">Research Institute</div>
+              
+              {/* Main Image */}
+              <div className="relative mb-4">
+                <img 
+                  src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=400" 
+                  alt="Professional healthcare worker" 
+                  className="w-full h-64 object-cover rounded-lg"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent rounded-lg"></div>
+                <div className="absolute bottom-4 left-4 text-white">
+                  <h3 className="font-bold text-xl">#Empowering</h3>
+                  <h3 className="font-bold text-xl">ClinicalCareers</h3>
+                </div>
+              </div>
+              
+              {/* Social Actions */}
+              <div className="flex items-center justify-between mb-3">
+                <div className="flex items-center space-x-4">
+                  <Heart className="w-6 h-6 text-red-500" />
+                  <MessageCircle className="w-6 h-6 text-gray-600" />
+                  <svg className="w-6 h-6 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8" />
+                  </svg>
+                </div>
+                <Bookmark className="w-6 h-6 text-gray-600" />
+              </div>
+              
+              {/* Likes */}
+              <div className="text-sm font-semibold text-gray-900 mb-2">1,048 likes</div>
+              
+              {/* Bottom Badge */}
+              <div className="bg-blue-100 text-blue-800 text-xs font-medium px-3 py-1 rounded-full inline-block">
+                🎓 Advanced LMS Support
+              </div>
+            </div>
+            
+            {/* Floating Query Button */}
+            <div className="absolute -bottom-4 -right-4 bg-red-500 text-white px-4 py-2 rounded-lg text-sm font-medium shadow-lg">
+              💬 Drop us a Query
+            </div>
           </div>
         </div>
       </div>
