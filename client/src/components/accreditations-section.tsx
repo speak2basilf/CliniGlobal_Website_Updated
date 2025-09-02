@@ -4,7 +4,7 @@ const accreditations = [
   {
     title: "IAO Accreditation",
     description: "International standards in healthcare education",
-    logo: "https://images.unsplash.com/photo-1560472354-b33ff0c44a43?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&h=100",
+    logo: "/attached_assets/IAO.PNG",
     alt: "IAO Accreditation Logo",
     bgColor: "bg-blue-50",
     borderColor: "border-blue-200",
@@ -13,7 +13,7 @@ const accreditations = [
   {
     title: "ISO 9001:2015",
     description: "Quality management system certification",
-    logo: "https://images.unsplash.com/photo-1606868306217-dbf5046868d2?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&h=100",
+    logo: "/attached_assets/ISO.PNG",
     alt: "ISO 9001:2015 Logo",
     bgColor: "bg-gray-50",
     borderColor: "border-gray-200",
@@ -22,7 +22,7 @@ const accreditations = [
   {
     title: "LSSSDC Certified",
     description: "Life Sciences Sector approved programs",
-    logo: "https://images.unsplash.com/photo-1559757148-5c350d0d3c56?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&h=100",
+    logo: "/attached_assets/LSSSDC.PNG",
     alt: "LSSSDC Certification Logo",
     bgColor: "bg-green-50",
     borderColor: "border-green-200",
@@ -40,7 +40,7 @@ const accreditations = [
   {
     title: "NSDC Certified",
     description: "National Skill Development Corporation recognition",
-    logo: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&h=100",
+    logo: "/attached_assets/NSDC.PNG",
     alt: "NSDC Certification Logo",
     bgColor: "bg-orange-50",
     borderColor: "border-orange-200",
