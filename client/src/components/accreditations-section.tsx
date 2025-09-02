@@ -4,7 +4,7 @@ const accreditations = [
   {
     title: "IAO Accreditation",
     description: "International standards in healthcare education",
-    logo: "@assets/IAO.PNG",
+    logo: "/attached_assets/IAO.PNG",
     alt: "IAO Accreditation Logo",
     bgColor: "bg-blue-50",
     borderColor: "border-blue-200",
@@ -13,7 +13,7 @@ const accreditations = [
   {
     title: "ISO 9001:2015",
     description: "Quality management system certification",
-    logo: "@assets/ISO.PNG",
+    logo: "/attached_assets/ISO.PNG",
     alt: "ISO 9001:2015 Logo",
     bgColor: "bg-gray-50",
     borderColor: "border-gray-200",
@@ -22,7 +22,7 @@ const accreditations = [
   {
     title: "LSSSDC Certified",
     description: "Life Sciences Sector approved programs",
-    logo: "@assets/LSSSDC.PNG",
+    logo: "/attached_assets/LSSSDC.PNG",
     alt: "LSSSDC Certification Logo",
     bgColor: "bg-green-50",
     borderColor: "border-green-200",
@@ -31,7 +31,7 @@ const accreditations = [
   {
     title: "Skill India Accreditations",
     description: "Government of India skill development initiative",
-    logo: "https://images.unsplash.com/photo-1587825140708-dfaf72ae4b04?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&h=100",
+    logo: "https://images.unsplash.com/photo-1524995997946-a1c2e315a42f?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&h=100",
     alt: "Skill India Logo",
     bgColor: "bg-purple-50",
     borderColor: "border-purple-200",
@@ -40,7 +40,7 @@ const accreditations = [
   {
     title: "NSDC Certified",
     description: "National Skill Development Corporation recognition",
-    logo: "@assets/NSDC.PNG",
+    logo: "/attached_assets/NSDC.PNG",
     alt: "NSDC Certification Logo",
     bgColor: "bg-orange-50",
     borderColor: "border-orange-200",
