@@ -4,7 +4,7 @@ const accreditations = [
   {
     title: "IAO Accreditation",
     description: "International standards in healthcare education",
-    logo: "/attached_assets/IAO.PNG",
+    logo: "@assets/IAO.PNG",
     alt: "IAO Accreditation Logo",
     bgColor: "bg-blue-50",
     borderColor: "border-blue-200",
@@ -13,7 +13,7 @@ const accreditations = [
   {
     title: "ISO 9001:2015",
     description: "Quality management system certification",
-    logo: "/attached_assets/ISO.PNG",
+    logo: "@assets/ISO.PNG",
     alt: "ISO 9001:2015 Logo",
     bgColor: "bg-gray-50",
     borderColor: "border-gray-200",
@@ -22,7 +22,7 @@ const accreditations = [
   {
     title: "LSSSDC Certified",
     description: "Life Sciences Sector approved programs",
-    logo: "/attached_assets/LSSSDC.PNG",
+    logo: "@assets/LSSSDC.PNG",
     alt: "LSSSDC Certification Logo",
     bgColor: "bg-green-50",
     borderColor: "border-green-200",
@@ -40,7 +40,7 @@ const accreditations = [
   {
     title: "NSDC Certified",
     description: "National Skill Development Corporation recognition",
-    logo: "/attached_assets/NSDC.PNG",
+    logo: "@assets/NSDC.PNG",
     alt: "NSDC Certification Logo",
     bgColor: "bg-orange-50",
     borderColor: "border-orange-200",
