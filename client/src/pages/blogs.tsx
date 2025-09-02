@@ -9,6 +9,16 @@ import Footer from "@/components/footer";
 const blogPosts = [
   {
     id: 1,
+    title: "Understanding Clinical Research: A Comprehensive Guide for Beginners",
+    description: "Explore the fundamentals of clinical research, from basic concepts to career opportunities in this rapidly growing field.",
+    image: "https://images.unsplash.com/photo-1559757175-0eb30cd8c063?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=250",
+    author: "Dr. Sarah Johnson",
+    date: "January 18, 2025",
+    category: "Training",
+    readTime: "8 min read"
+  },
+  {
+    id: 2,
     title: "The Future of Clinical Research: AI and Machine Learning Integration",
     description: "Explore how artificial intelligence is revolutionizing clinical trials and data analysis in modern healthcare research.",
     image: "https://images.unsplash.com/photo-1559757175-0eb30cd8c063?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=250",
@@ -18,7 +28,7 @@ const blogPosts = [
     readTime: "5 min read"
   },
   {
-    id: 2,
+    id: 3,
     title: "Career Opportunities in Pharmacovigilance: A Complete Guide",
     description: "Discover the growing field of drug safety monitoring and the career paths available for aspiring professionals.",
     image: "https://images.unsplash.com/photo-1576091160550-2173dba999ef?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=250",
@@ -28,7 +38,7 @@ const blogPosts = [
     readTime: "7 min read"
   },
   {
-    id: 3,
+    id: 4,
     title: "Regulatory Affairs in Clinical Research: Key Updates for 2025",
     description: "Stay informed about the latest regulatory changes affecting clinical research protocols and compliance requirements.",
     image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=250",
@@ -38,7 +48,7 @@ const blogPosts = [
     readTime: "6 min read"
   },
   {
-    id: 4,
+    id: 5,
     title: "Medical Writing Excellence: Tips from Industry Experts",
     description: "Learn the essential skills and best practices for creating compelling clinical documentation and research papers.",
     image: "https://images.unsplash.com/photo-1586281380349-632531db7ed4?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=250",
@@ -48,7 +58,7 @@ const blogPosts = [
     readTime: "4 min read"
   },
   {
-    id: 5,
+    id: 6,
     title: "Clinical Data Management: Best Practices and Tools",
     description: "Master the fundamentals of clinical data collection, validation, and management using industry-standard software.",
     image: "https://images.unsplash.com/photo-1559757148-5c350d0d3c56?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=250",
@@ -58,7 +68,7 @@ const blogPosts = [
     readTime: "8 min read"
   },
   {
-    id: 6,
+    id: 7,
     title: "Industry Updates: Latest Trends in Biotech and Pharma",
     description: "Stay ahead with the latest developments, mergers, and innovations shaping the pharmaceutical industry.",
     image: "https://images.unsplash.com/photo-1582719471384-894fbb16e074?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=250",
