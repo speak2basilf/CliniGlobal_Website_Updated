@@ -4,7 +4,8 @@ const accreditations = [
   {
     title: "IAO Accreditation",
     description: "International standards in healthcare education",
-    icon: "🏛️",
+    logo: "https://images.unsplash.com/photo-1560472354-b33ff0c44a43?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&h=100",
+    alt: "IAO Accreditation Logo",
     bgColor: "bg-blue-50",
     borderColor: "border-blue-200",
     hoverColor: "hover:bg-blue-100"
@@ -12,7 +13,8 @@ const accreditations = [
   {
     title: "ISO 9001:2015",
     description: "Quality management system certification",
-    icon: "⚙️",
+    logo: "https://images.unsplash.com/photo-1606868306217-dbf5046868d2?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&h=100",
+    alt: "ISO 9001:2015 Logo",
     bgColor: "bg-gray-50",
     borderColor: "border-gray-200",
     hoverColor: "hover:bg-gray-100"
@@ -20,7 +22,8 @@ const accreditations = [
   {
     title: "LSSSDC Certified",
     description: "Life Sciences Sector approved programs",
-    icon: "🧬",
+    logo: "https://images.unsplash.com/photo-1559757148-5c350d0d3c56?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&h=100",
+    alt: "LSSSDC Certification Logo",
     bgColor: "bg-green-50",
     borderColor: "border-green-200",
     hoverColor: "hover:bg-green-100"
@@ -28,18 +31,29 @@ const accreditations = [
   {
     title: "Skill India Accreditations",
     description: "Government of India skill development initiative",
-    icon: "🇮🇳",
+    logo: "https://images.unsplash.com/photo-1587825140708-dfaf72ae4b04?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&h=100",
+    alt: "Skill India Logo",
     bgColor: "bg-purple-50",
     borderColor: "border-purple-200",
     hoverColor: "hover:bg-purple-100"
   },
   {
-    title: "Asian International University, Manipur",
-    description: "Validated by healthcare leaders",
-    icon: "🏫",
+    title: "NSDC Certified",
+    description: "National Skill Development Corporation recognition",
+    logo: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&h=100",
+    alt: "NSDC Certification Logo",
     bgColor: "bg-orange-50",
     borderColor: "border-orange-200",
     hoverColor: "hover:bg-orange-100"
+  },
+  {
+    title: "Asian International University",
+    description: "Academic partnership and validation",
+    logo: "https://images.unsplash.com/photo-1523050854058-8df90110c9f1?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&h=100",
+    alt: "Asian International University Logo",
+    bgColor: "bg-indigo-50",
+    borderColor: "border-indigo-200",
+    hoverColor: "hover:bg-indigo-100"
   }
 ];
 
@@ -56,15 +70,20 @@ export default function AccreditationsSection() {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-5 gap-6 mb-12">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-6 gap-6 mb-12">
           {accreditations.map((accreditation, index) => (
             <div 
               key={index}
               className={`${accreditation.bgColor} ${accreditation.borderColor} ${accreditation.hoverColor} border-2 p-6 rounded-xl text-center transition-all duration-300 hover:scale-105 hover:shadow-lg transform cursor-pointer group relative overflow-hidden`}
               data-testid={`accreditation-card-${index}`}
             >
-              <div className="text-4xl mb-4 group-hover:animate-bounce transition-transform duration-300">
-                {accreditation.icon}
+              <div className="mb-4 flex justify-center">
+                <img 
+                  src={accreditation.logo}
+                  alt={accreditation.alt}
+                  className="w-16 h-16 object-contain rounded-lg group-hover:scale-110 transition-transform duration-300 shadow-sm"
+                  data-testid={`accreditation-logo-${index}`}
+                />
               </div>
               <h3 className="text-lg font-semibold text-gray-900 mb-3 group-hover:text-blue-600 transition-colors duration-300" data-testid={`accreditation-title-${index}`}>
                 {accreditation.title}
