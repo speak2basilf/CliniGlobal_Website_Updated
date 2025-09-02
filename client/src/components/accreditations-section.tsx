@@ -26,9 +26,9 @@ const accreditations = [
     hoverColor: "hover:bg-green-100"
   },
   {
-    title: "Council for Clinical Research & Education (CCRE)",
-    description: "Endorsed by regulatory authorities",
-    icon: "🎓",
+    title: "Skill India Accreditations",
+    description: "Government of India skill development initiative",
+    icon: "🇮🇳",
     bgColor: "bg-purple-50",
     borderColor: "border-purple-200",
     hoverColor: "hover:bg-purple-100"
