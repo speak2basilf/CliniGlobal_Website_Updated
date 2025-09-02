@@ -1,9 +1,11 @@
 import { useState } from "react";
 import { Phone, Mail, Menu, X, ChevronDown } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { useLocation } from "wouter";
 
 export default function Header() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const [location, setLocation] = useLocation();
 
   const scrollToSection = (sectionId: string) => {
     const element = document.getElementById(sectionId);
@@ -13,6 +15,10 @@ export default function Header() {
     setIsMobileMenuOpen(false);
   };
 
+  const navigateToPage = (path: string) => {
+    setLocation(path);
+    setIsMobileMenuOpen(false);
+  };
   return (
     <header className="sticky top-0 z-50 shadow-lg">
       {/* Top Blue Bar */}
@@ -60,11 +66,11 @@ export default function Header() {
             <nav className="hidden lg:flex items-center space-x-8">
               <button 
                 onClick={() => scrollToSection("home")}
-                className="text-blue-600 hover:text-blue-700 transition-colors duration-200 font-medium relative group"
+                className={`${location === "/" ? "text-blue-600" : "text-gray-600"} hover:text-blue-600 transition-colors duration-200 font-medium relative group`}
                 data-testid="nav-home"
               >
                 Home
-                <div className="absolute -bottom-1 left-1/2 transform -translate-x-1/2 w-2 h-2 bg-blue-600 rounded-full"></div>
+                {location === "/" && <div className="absolute -bottom-1 left-1/2 transform -translate-x-1/2 w-2 h-2 bg-blue-600 rounded-full"></div>}
               </button>
               <button 
                 onClick={() => scrollToSection("about")}
@@ -91,7 +97,8 @@ export default function Header() {
                 Placements
               </button>
               <Button
-                className="bg-blue-500 hover:bg-blue-600 text-white px-6 py-2 rounded-full font-medium transition-colors duration-200 shadow-sm text-sm"
+                onClick={() => navigateToPage("/blogs")}
+                className={`${location === "/blogs" ? "bg-blue-600" : "bg-blue-500"} hover:bg-blue-600 text-white px-6 py-2 rounded-full font-medium transition-colors duration-200 shadow-sm text-sm`}
                 data-testid="nav-blogs"
               >
                 Blogs
@@ -169,6 +176,7 @@ export default function Header() {
                   Placements
                 </button>
                 <button 
+                  onClick={() => navigateToPage("/blogs")}
                   className="text-left text-gray-600 hover:text-blue-600 transition-colors duration-200"
                   data-testid="mobile-nav-blogs"
                 >
